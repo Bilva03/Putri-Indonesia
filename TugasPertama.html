@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Puteri Indonesia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.batikprabuseno.com/artikel/wp-content/uploads/2024/06/Makna-Motif-Batik-Gunungan-Motif-Batik-Klasik-Indonesia.png'); /* Replace with the path to your batik image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+            padding: 50px 0;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .biodata {
+            text-align: center;
+        }
+        .biodata p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <!-- Slide 1: Biodata Puteri Indonesia -->
+        <div class="container" id="slide1">
+            <h1>Biodata Puteri Indonesia</h1>
+            <img src="https://indoposnews.co.id/wp-content/uploads/2021/04/Screen-Shot-2021-04-24-at-7.41.40-PM.png" alt="Puteri Indonesia" width="300">
+            <div class="biodata">
+                <h2>Nama: Ayu Maulida Putri</h2>
+                <p>Tempat, Tanggal Lahir: Surabaya, 11 Juli 1997</p>
+                <p>Tinggi Badan: 178 cm</p>
+                <p>Profesi: Model, Puteri Indonesia 2020</p>
+                <p>Pendidikan: Sarjana Hukum, Universitas Airlangga</p>
+                <p>Prestasi: Puteri Indonesia 2020, Top 20 Miss Universe 2020</p>
+                <p>Baca sejarah Ayu Maulida Putri di <a href="https://id.wikipedia.org/wiki/Ayu_Maulida" target="_blank">sini</a>.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Perkenalan Pembuat -->
+        <div class="container" id="slide2">
+            <h2>Perkenalan Diri</h2>
+            <div class="biodata">
+                <h3>Nama: Bilva Aurellia Mulyadi</h3>
+                <p>Kelas: XI RPL 1 </p>
+                <p>No.Absen: 11</p>
+                <p>Pesan: Terima kasih telah mengunjungi halaman biodata Puteri Indonesia ini!</p>
+            </div>
+        </div>
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Komentar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .comment-section {
+            width: 60%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .comment-display {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .comment-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="comment-section">
+        <h2>Bagian Komentar</h2>
+        
+        <!-- Input untuk nama -->
+        <input type="text" id="nameBox" class="input-box" placeholder="Nama Anda...">
+        
+        <!-- Input untuk email -->
+        <input type="email" id="emailBox" class="input-box" placeholder="Email Anda...">
+        
+        <!-- Kotak untuk komentar -->
+        <textarea id="commentBox" class="input-box" placeholder="Tulis komentar Anda..."></textarea>
+        
+        <!-- Tombol untuk kirim komentar -->
+        <button class="submit-btn" onclick="submitComment()">Kirim Komentar</button>
+        
+        <!-- Bagian untuk menampilkan komentar -->
+        <div class="comment-display" id="commentDisplay">
+            <h3>Komentar:</h3>
+        </div>
+    </div>
+
+    <script>
+        function submitComment() {
+            // Ambil nilai dari kotak input
+            var nameBox = document.getElementById('nameBox');
+            var emailBox = document.getElementById('emailBox');
+            var commentBox = document.getElementById('commentBox');
+            var commentDisplay = document.getElementById('commentDisplay');
+
+            var name = nameBox.value.trim();
+            var email = emailBox.value.trim();
+            var comment = commentBox.value.trim();
+
+            // Validasi input tidak boleh kosong
+            if (name === "" || email === "" || comment === "") {
+                alert("Nama, email, dan komentar tidak boleh kosong!");
+                return;
+            }
+
+            // Membuat elemen div baru untuk komentar
+            var newComment = document.createElement('div');
+            newComment.classList.add('comment-item');
+
+            // Membuat elemen untuk nama
+            var commentAuthor = document.createElement('div');
+            commentAuthor.classList.add('comment-author');
+            commentAuthor.textContent = name;
+
+            // Membuat elemen untuk teks komentar
+            var commentText = document.createElement('div');
+            commentText.textContent = comment;
+
+            // Menyusun komentar baru
+            newComment.appendChild(commentAuthor);
+            newComment.appendChild(commentText);
+
+            // Menambahkan komentar ke tampilan komentar
+            commentDisplay.appendChild(newComment);
+
+            // Mengosongkan kotak input setelah komentar dikirim
+            nameBox.value = "";
+            emailBox.value = "";
+            commentBox.value = "";
+        }
+    </script>
+</body>
+</html>
+        <!-- Footer -->
+        <footer>
+            &copy;Bilva belajar web
+           <a href="#top">Kembali ke atas 
+        </footer>
+    </div>
+</body>
+</html>
